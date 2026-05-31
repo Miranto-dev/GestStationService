@@ -1,0 +1,17 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+
+## Build
+bin/
+obj/
+
+## ASP.NET
+appsettings.Development.json
+
+## Librairies externes — inutile de les versionner
+wwwroot/lib/
+
+## Base de données
+*.db
