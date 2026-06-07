@@ -1,8 +1,201 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Accueil";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<header class="flex justify-around flex-wrap items-center gap-10">
+    <div>
+        <h1 class="font-bold text-5xl mb-10">Gérez votre station <br /> service avec <span class="text-primary">précision</span> et <br /> simplicité</h1>
+        <p class="mb-10">Une plateforme complète pour administrer vos pompes, vos ventes, <br /> vos stocks de carburant et vos équipes — en temps réel.</p>
+
+        <div class="flex items-center gap-5 mb-10 text-center">
+            <div class=" border border-neutral border-r-black px-3 ml-3">
+                <p class="text-primary font-bold">+ 200</p>
+                <p>Station</p>
+            </div>
+
+            <div class=" border border-neutral border-r-black px-3 ml-3">
+                <p class="text-secondary font-bold">99.8 %</p>
+                <p>Disponibilité</p>
+            </div>
+
+            <div class=" border border-neutral border-r-black px-5 ml-3">
+                <p class="text-tertiary font-bold">3</p>
+                <p>Rôles</p>
+            </div>
+        </div>
+
+        <button class="px-4 py-2 bg-blue-400 text-white rounded-lg hover:bg-primary transition font-bold">Accéder à mon éspace -></button>
+    </div>
+
+    <div>
+        <img src="~/images/img1.png" class="h-64 rounded-3 shadow-md"/>
+    </div>
+</header>
+
+
+<main>
+    <div class="m-0 mt-20 bg-white pt-20 pb-20">
+        <div class="mb-5">
+            <h1 class="font-bold text-2xl text-center mb-3">Fonctionnalités clés</h1>
+            <div class="border border-neutral border-primary text-center w-16 flex-column justify-center m-auto"></div>
+        </div>
+
+        <div class="flex justify-around items-center gap-10 px-10">
+            <div class="border border-slate-100 shadow-md p-7">
+                <div class="mb-4">
+                    <img src="~/icones/stationService.png" class="w-12"/>
+                </div>
+
+                <h1 class="mb-4 font-bold">Gestion des pompes</h1>
+                <p class="mb-4">Suivi en temps réel des débits, niveaux de cuves et alertes de maintenance automatisées 
+                    pour éviter toute rupture.</p>
+            </div>
+
+
+            <div class="border border-slate-100 shadow-md p-7">
+                <div class="mb-4">
+                    <img src="~/icones/caisse.png" class="w-12" />
+                </div>
+
+                <h1 class="mb-4 font-bold">Caisse & Paiements</h1>
+                <p class="mb-4">
+                    Gestion fluide des transactions multi-moyens : espèces, cartes bancaires et paiements mobiles avec 
+                    édition de tickets
+                </p>
+            </div>
+
+            <div class="border border-slate-100 shadow-md p-7">
+                <div class="mb-4">
+                    <img src="~/icones/diagramme.png" class="w-12" />
+                </div>
+
+                <h1 class="mb-4 font-bold">Tableau de bord Admin</h1>
+                <p class="mb-4">
+                    Analyses globales des ventes, performance par équipe, rapports exports et monitoring 
+                    centralisé de votre réseau
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-5 bg-slate-200 pb-20">
+        <div class="p-10">
+            <h1 class="font-bold text-2xl mb-2">Accès sur Mesure</h1>
+            <p>Une interface adaptée à chaque mission pour plus d'efficacité</p>
+
+            <div class="block mt-7 bg-white border border-5 border-l-tertiary shadow-sm rounded-lg">
+                <div class="p-5 flex items-center gap-5 ">
+                    <img src="~/icones/securite.png" class="w-12" alt="" />
+
+                    <div>
+                        <h1 class="text-tertiary font-bold">Admin</h1>
+                        <p>Contrôle total, comptes, rapports financiers et paramétrage des prix</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block mt-7 bg-white border border-5 border-l-secondary shadow-sm rounded-lg">
+                <div class="p-5 flex items-center gap-5 ">
+                    <img src="~/icones/pompe.png" class="w-12" alt="" />
+
+                    <div>
+                        <h1 class="text-secondary font-bold">Pompiste</h1>
+                        <p>Distribution de carburant, suivi des véhicules, historique et alertes terrain</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block mt-7 bg-white border border-5 border-l-tertiary shadow-sm rounded-lg">
+                <div class="p-5 flex items-center gap-5 ">
+                    <img src="~/icones/money.png" class="w-12" alt="" />
+
+                    <div>
+                        <h1 class="text-gray-400 font-bold">Caissier</h1>
+                        <p>Paiements, encaissements, rapprochements et rapport de fin de journée</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-20 p-10 bg-white/50">
+            <h1 class="mb-10 text-center font-bold text-2xl">Comment ça marche ?</h1>
+
+            <div class="flex justify-around items-center p-3">
+                <div class="">
+                    <div class="rounded-[50px] px-4 py-3 border border-primary text-primary">01</div>
+                </div>
+
+                <div class="">
+                    <div class="rounded-[50px] px-4 py-3  border border-primary text-primary">02</div>
+                </div>
+
+                <div class="">
+                    <div class="rounded-[50px] px-4 py-3  border border-primary text-primary">03</div>
+                </div>
+
+                <div class="">
+                    <div class="rounded-[50px] px-4 py-3 border border-primary text-primary">04</div>
+                </div>
+            </div>
+
+            <div class="border border-5 border-primary"></div>
+
+            <div class="flex justify-around p-3 items-center">
+                <div class="text-center">
+                    <h2 class="text-xl font-bold">Connexion</h2>
+                    <p>Accès sécurisé via authentification</p>
+                </div>
+
+                <div class="text-center">
+                    <h2 class="text-xl font-bold">Dashboard</h2>
+                    <p>Vue globale de l'état de la station</p>
+                </div>
+
+                <div class="text-center">
+                    <h2 class="text-xl font-bold">Opérations</h2>
+                    <p>Gestion des ventes et des stocks</p>
+                </div>
+
+                <div class="text-center">
+                    <h2 class="text-xl font-bold">Rapports</h2>
+                    <p>Analyse de performance et exports</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Section Formulaire de connexion-->
+        <div class="mt-20 m-auto w-96 p-10 shadow-lg bg-white rounded-lg">
+            <form method="post">
+                <div class="text-center mb-10">
+                    <div class="mb-5 m-auto flex justify-center">
+                        <img src="~/icones/cadenas.png" class="w-12" alt="Alternate Text" />
+                    </div>
+
+                    <div>
+                        <h1 class="text-2xl font-bold text-primary">Accès sécurisé</h1>
+                        <p>Connectez-vous pour accéder à votre interface</p>
+                    </div>
+                </div>
+
+                <div>
+                    <label>Email</label><br />
+                    <input type="email" class="px-2 py-2 w-full mb-5 border boder-primary rounded-lg" required placeholder="monemail@gmail.com"></input><br />
+
+                    <label>Mot de passe</label><br />
+                    <input type="password" class="px-2 py-2 w-full mb-5 border boder-primary rounded-lg" name="" value="" /><br />
+
+                    <label>Rôle utilisateur</label><br />
+                    <select class="px-2 py-2 w-full mb-10 border boder-primary rounded-lg">
+                        <option value="Admin">Admin</option>
+                        <option value="Pompiste">Pompiste</option>
+                        <option value="Caissier">Caissier</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="w-full p-3 mb-10 text-white bg-blue-400 hover:bg-primary transition cursor-pointer rounded-lg">Se connecter</button>
+            </form>
+        </div>
+
+    </div>
+</main>

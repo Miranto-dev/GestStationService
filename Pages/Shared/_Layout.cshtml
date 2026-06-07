@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GestStationService</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuration Tailwind (optionnel mais recommandé) -->
+    <script>
+        // Version CORRECTE
+        tailwind = {
+        config: {
+        theme: {
+        extend: {
+        colors: {
+        primary: '#2D9CDB',     // Blue
+        secondary: '#27AE60',   //Vert
+        tertiary: '#F2994A',    //Orange
+        neutral: '#F8FAFC',     //Gris
+        }
+        }
+        }
+        }
+        }
+    </script>
+</head>
+<body class="bg-neutral">
+    <header>
+        <nav class="flex justify-around py-4 px-3 items-center bg-white shadow-sm">
+            <div>
+                <h1 class="text-2xl text-primary font-bold">⛽ FlowStation</h1>
+            </div>
+            <div>
+                <button class="px-4 py-2 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition">
+                    Se connecter
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container m-0 py-8">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
